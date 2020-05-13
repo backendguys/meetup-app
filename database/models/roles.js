@@ -6,11 +6,11 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Roles.associate = function(models) {
     // associations can be defined here
-    Roles.belongsTo(models.User, {
-      foreignKey: 'UserID',
-      as: 'roles',
-      onDelete: 'CASCADE',
-    });
+    // Roles.belongsTo(models.User, {
+    //   foreignKey: 'UserID',
+    //   as: 'roles',
+    //   onDelete: 'CASCADE',
+    // });
   };
   return Roles;
 };

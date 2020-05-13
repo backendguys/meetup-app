@@ -6,12 +6,12 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Groups.associate = function(models) {
     // associations can be defined here
-    Groups.belongsToMany(models.User, {
-      through:'UsersGroup',
-      foreignKey: 'groupId',
-      as: 'roles',
-      onDelete: 'CASCADE',
-    });
+    // Groups.belongsToMany(models.User, {
+    //   through:'UsersGroup',
+    //   foreignKey: 'groupId',
+    //   as: 'roles',
+    //   onDelete: 'CASCADE',
+    // });
   };
   return Groups;
 };

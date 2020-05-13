@@ -11,17 +11,17 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   User.associate = function(models) {
     // associations can be defined here
-    User.belongsToMany(models.Groups, {
-      through:'UsersGroup',
-      foreignKey: 'userId',
-      as: 'usergroups',
-      onDelete: 'CASCADE',
-    });
-    User.hasMany(models.Roles, {
-     foreignKey: 'userId',
-     as: 'permission',
-     onDelete: 'CASCADE',
-   });
+  //   User.belongsToMany(models.Groups, {
+  //     through:'UsersGroup',
+  //     foreignKey: 'userId',
+  //     as: 'usergroups',
+  //     onDelete: 'CASCADE',
+  //   });
+  //   User.hasMany(models.Roles, {
+  //    foreignKey: 'userId',
+  //    as: 'permission',
+  //    onDelete: 'CASCADE',
+  //  });
   };
   return User;
 };
